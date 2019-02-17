@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Pufo SA</title>
+    <link rel="stylesheet" href="./css/Estilos.css">
+</head>
+
+<body>
+        <div id="messages"></div>
+    <div id="contenedor">
+
+        <form id='form' method='post'>
+            <div id="columna1">
+                <p>Nombre usuario (obligatorio): <input type='text' name='nombre' required /></p>
+                <p>Apellido (obligatorio): <input type='text' name='apellido' required/></p>
+                <p>Correo (obligatorio): <input type='text' name='direccion' required /></p>
+                <p>Estado: <input type='text' name='estado' /></p>
+                <p>Codigo Postal: <input type='text' name='codigopostal' /></p>
+                <p>Contrasena (obligatorio)<input type='password' name='psswd' required/></p>
+                <p>Confirmar contrasena  <input type='password' name='psswd2'required /></p>
+                
+                
+            </div>
+            <div id="columna2">
+
+                <p>Fecha contrato (obligatorio)<input type="date" id="fecha" min="2000-01-01" required></p>
+                <p>Codigo Area: <input type='text' name='area' /></p>
+                <p>Telefono : <input type='tel' name='telefono' /></p>
+                <p>Trabajo</p>
+                <br>
+                <select id="trabajo" required>
+                        <option value="0" selected>Elija un valor</option>
+                        <option value="1">SECRETARIO</option>
+                        <option value="2">STAFF</option>
+                        <option value="3">ANALYST</option>
+                        <option value="4">VENDEDOR</option>
+                </select>
+                <br>
+                
+                <p>Jefe:</p>
+                <select id="jefe" required>
+                    <option value="0" selected>Elija un valor</option>
+                    <option value="1">FRANCIS KING</option>
+                    <option value="2">JAMES MURRAY</option>
+                    <option value="3">BARBARA MILLER</option>
+                    <option value="4">JENNIFER FORD</option>
+                </select>
+                <p>Credito: <input type='text' name='credito' /></p>
+                <p>Comentarios: <input type='text' name='comentario' /></p>
+            </div>
+            
+            <br><br><br>
+            <button id="confirmar" type='submit' onclick="validarFormulario();" value='anadir'>Confirmar</button>
+        </form>
+
+    </div>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>

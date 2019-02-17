@@ -1,0 +1,122 @@
+body{
+    background-image: url("fondo_php.jpg");
+}
+
+.div-select {
+   /* Tamanho final do select */
+    overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+}
+  
+.div-select select {
+      background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880;  /* Imagem de fundo (Seta) */
+      background-position: 195px center;  /*Posição da imagem do background*/
+      width: 250px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+      height:50px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+      font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */
+      font-size:18px; /* Tamanho da Fonte */
+      padding:13px 20px 13px 12px; /* Configurações de padding para posicionar o texto no campo */
+      color:#fff; /* Cor da Fonte */
+      -moz-appearance: none;
+     -webkit-appearance: none;
+      margin-left: 10px;
+      border: 2px solid black;
+      border-radius: 6px ;
+      appearance: none; 
+      text-indent: 0.01px; /* Remove seta padrão do FireFox */
+      text-overflow: "";  /* Remove seta padrão do FireFox */     
+      select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+  
+}
+#contenedor{
+  
+    display: box;
+    width: 500px;
+    z-index: 3;
+}
+
+#columna1{
+    position: relative;
+    width:250px;
+    float: left;
+}
+#columna2{
+    position: relative;
+    width:250px;
+    float: right;
+}
+
+h2{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+#salir{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.informe{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 500px;
+}
+.estadisticas{
+    display: block;
+    position: absolute;
+    top:200px;
+    left: 500px;
+}
+
+
+p{
+    font-size: 18px;
+    margin-left: 10px;
+    color:#fff;
+}
+
+#mensaje{
+    font-size: 18px;
+    float: right;
+    left: 50%;
+    color:#fff;
+    display: inline-block;
+}
+
+input,button[type=submit],th, select,option{
+    text-decoration: none;
+    padding: 12px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #354880;
+    border-radius: 6px;
+    border: 2px solid black;
+    
+  }
+
+  #confirmar{
+    text-decoration: none;
+    padding: 12px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color:orange;
+    border-radius: 6px;
+    border: 2px solid black;
+    
+  }
+  
+  
+  form *{
+      display: inline;
+  }
+ 
+   td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: #aaaaaa}
